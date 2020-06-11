@@ -1,6 +1,6 @@
 
 read_verilog system.v
-read_verilog ../../picorv32.v
+read_verilog picorv32.v
 read_verilog simpleuart.v
 read_xdc synth_system.xdc
 
