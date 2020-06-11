@@ -44,7 +44,7 @@ firmware.hex: firmware.S firmware.c firmware.lds
 	$(TOOLCHAIN_PREFIX)gcc -Os -ffreestanding -nostdlib -o firmware.elf firmware.S firmware.c -march=rv32i -mabi=ilp32 \
 		--std=gnu99 -Wl,--build-id=none,-Bstatic,-T,firmware.lds,-Map,firmware.map,--strip-debug -lgcc
 	$(TOOLCHAIN_PREFIX)objcopy -O binary firmware.elf firmware.bin
-	python3 ../../firmware/makehex.py firmware.bin 4096 > firmware.hex
+	python3 makehex.py firmware.bin 4096 > firmware.hex
 
 tab_%/results.txt:
 	bash tabtest.sh $@
