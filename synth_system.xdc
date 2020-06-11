@@ -6,7 +6,7 @@ set_property PACKAGE_PIN E3 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
 create_clock -period 62.50 [get_ports clk]
 
-# Pmod Header JA (JA0..JA7)
+# blue and green leds
 set_property PACKAGE_PIN E1 [get_ports {out_byte[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {out_byte[0]}]
 set_property PACKAGE_PIN G4 [get_ports {out_byte[1]}]
@@ -24,7 +24,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {out_byte[6]}]
 set_property PACKAGE_PIN T10 [get_ports {out_byte[7]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {out_byte[7]}]
 
-# Pmod Header JB (JB0..JB2)
+# btn 0 green rgb led 0 and 1
 set_property PACKAGE_PIN D9 [get_ports {resetn}]
 set_property IOSTANDARD LVCMOS33 [get_ports {resetn}]
 set_property PACKAGE_PIN F6 [get_ports {trap}]
